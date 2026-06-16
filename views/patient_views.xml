@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hi_patient_list" model="ir.ui.view">
+        <field name="name">hi.patient.list</field>
+        <field name="model">hi.patient</field>
+        <field name="arch" type="xml">
+            <list string="المرضى / Patients">
+                <field name="name"/>
+                <field name="phone"/>
+                <field name="age"/>
+                <field name="gender"/>
+                <field name="total_stay_time"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_hi_patient_form" model="ir.ui.view">
+        <field name="name">hi.patient.form</field>
+        <field name="model">hi.patient</field>
+        <field name="arch" type="xml">
+            <form string="المريض / Patient">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="phone"/>
+                            <field name="age"/>
+                        </group>
+                        <group>
+                            <field name="gender"/>
+                            <field name="total_stay_time" readonly="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="المواعيد / Appointments">
+                            <field name="appointment_ids">
+                                <list>
+                                    <field name="doctor_name"/>
+                                    <field name="appointment_date"/>
+                                    <field name="state"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_hi_patient" model="ir.actions.act_window">
+        <field name="name">المرضى / Patients</field>
+        <field name="res_model">hi.patient</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

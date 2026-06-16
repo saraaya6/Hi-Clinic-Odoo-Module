@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Top Level Menu -->
+    <menuitem id="menu_hi_clinic_root" name="العيادة الذكية / Hi Clinic" sequence="10"/>
+
+    <!-- Sub Menus -->
+    <menuitem id="menu_hi_patient" name="المرضى / Patients" parent="menu_hi_clinic_root" action="action_hi_patient" sequence="10"/>
+    <menuitem id="menu_hi_appointment" name="المواعيد / Appointments" parent="menu_hi_clinic_root" action="action_hi_appointment" sequence="20"/>
+    <menuitem id="menu_hi_operational_efficiency" name="كفاءة العمليات / Operational Efficiency" parent="menu_hi_clinic_root" action="action_hi_operational_efficiency" sequence="30"/>
+</odoo>

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hi_patient_user,hi.patient.user,model_hi_patient,base.group_user,1,1,1,1
+access_hi_appointment_user,hi.appointment.user,model_hi_appointment,base.group_user,1,1,1,1
+access_hi_operational_efficiency_user,hi.operational_efficiency.user,model_hi_operational_efficiency,base.group_user,1,1,1,1

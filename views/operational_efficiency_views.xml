@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hi_operational_efficiency_list" model="ir.ui.view">
+        <field name="name">hi.operational.efficiency.list</field>
+        <field name="model">hi.operational.efficiency</field>
+        <field name="arch" type="xml">
+            <list string="كفاءة العمليات / Operational Efficiency">
+                <field name="name"/>
+                <field name="efficiency_type"/>
+                <field name="estimated_loss"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_hi_operational_efficiency_form" model="ir.ui.view">
+        <field name="name">hi.operational.efficiency.form</field>
+        <field name="model">hi.operational.efficiency</field>
+        <field name="arch" type="xml">
+            <form string="كفاءة العمليات / Operational Efficiency">
+                <header>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="عنوان التقرير / Report Title"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="efficiency_type"/>
+                        </group>
+                        <group>
+                            <field name="estimated_loss"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="سجل التحسين / Improvement Log">
+                            <field name="improvement_log" placeholder="اكتب سجل حل المشكلة والتحسين هنا... / Write continuous improvement log here..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_hi_operational_efficiency" model="ir.actions.act_window">
+        <field name="name">كفاءة العمليات / Operational Efficiency</field>
+        <field name="res_model">hi.operational.efficiency</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>
