@@ -25,7 +25,7 @@ An advanced, production-ready Odoo 18 Community custom module that redefines cli
 
 ---
 
-#🚀 Installation & Setup
+🚀 Installation & Setup
 Prerequisites
 Docker Desktop installed on your machine.
 Odoo 18 Community environment.
