@@ -25,26 +25,7 @@ An advanced, production-ready Odoo 18 Community custom module that redefines cli
 
 ---
 
-## 📂 Module Structure
-
-```text
-hi_clinic/
-├── __init__.py
-├── __manifest__.py
-├── models/
-│   ├── __init__.py
-│   ├── appointment.py
-│   ├── operational_efficiency.py
-│   └── patient.py
-├── security/
-│   └── ir.model.access.csv
-└── views/
-    ├── appointment_views.xml
-    ├── clinic_menus.xml
-    ├── operational_efficiency_views.xml
-    └── patient_views.xml
-
-🚀 Installation & Setup
+#🚀 Installation & Setup
 Prerequisites
 Docker Desktop installed on your machine.
 Odoo 18 Community environment.
@@ -66,3 +47,23 @@ Clear the default Apps filter in the search box, search for hi_clinic or الع�
 Odoo Version Compatibility: Modern Odoo 18.0 standards.
 UI Views: Built entirely using updated modern Odoo 18 syntax (<list> instead of <tree>).
 Security: Complete access rights configured inside ir.model.access.csv giving secure read/write privileges to clinic managers and users.
+----
+
+## 📂 Module Structure
+
+```text
+hi_clinic/
+├── __init__.py
+├── __manifest__.py
+├── models/
+│   ├── __init__.py
+│   ├── appointment.py
+│   ├── operational_efficiency.py
+│   └── patient.py
+├── security/
+│   └── ir.model.access.csv
+└── views/
+    ├── appointment_views.xml
+    ├── clinic_menus.xml
+    ├── operational_efficiency_views.xml
+    └── patient_views.xml
